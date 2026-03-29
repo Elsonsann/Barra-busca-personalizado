@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+
+.buscaN {
+    font-size: 45px;
+    text-align: center;
+    width: auto;
+    height: 200px;
+    color: aqua;
+    background-color: rgb(59, 57, 53);
+}
+
+body{
+    height: 100vh;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscar-box{
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.buscar-box.ativar .input-buscar input {
+    width: 300px;
+    padding: 5px;
+} 
+
+.input-buscar input {
+    border: none;
+    outline: none;
+    width: 0;
+    transition: 0.4s;
+}
+
+.buscar-box .lupa-buscar, .buscar-box .btn-fechar{
+    min-width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.buscar-box .btn-fechar i{
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+
+.buscar-box .lupa-buscar i{
+font-size: 35px;
+
+}
+
+.buscar-box .input-buscar{
+    position: absolute;
+    left: 80px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 80px;
+}
+
+.buscar-box .input-buscar input{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+
+}
